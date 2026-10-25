@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaTech - Instituto Superior</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Hoja de estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#inicio">
+        <span class="fs-4">🎓</span>
+        <span>EducaTech <small class="fw-normal d-none d-sm-inline opacity-75">| Instituto Superior</small></span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary px-4 rounded-pill fw-semibold shadow-sm" href="#registro">Regístrate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="inicio" class="hero-section py-5 bg-light border-bottom">
+      <div class="container py-lg-4">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-semibold mb-3">Admisión 2026 - Abierta</span>
+            <h1 class="display-5 fw-bold text-dark lh-sm mb-3">
+              Forma tu futuro con educación de calidad
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Programas técnicos superiores diseñados para impulsar tu desarrollo profesional y personal en el sector tecnológico y empresarial.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#programas" class="btn btn-primary btn-lg px-4 shadow-sm">Conoce nuestros programas</a>
+              <a href="#registro" class="btn btn-outline-secondary btn-lg px-4">Contáctanos</a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-image-wrapper p-2 bg-white rounded-4 shadow">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" 
+                   alt="Estudiantes en el campus universitario" 
+                   class="img-fluid rounded-4 w-100 object-fit-cover" 
+                   style="max-height: 400px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BENEFICIOS (CSS GRID) ==================== -->
+    <section id="beneficios" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">¿Por qué estudiar con nosotros?</h2>
+          <p class="text-secondary mb-0">Descubre las ventajas de pertenecer a una comunidad educativa líder</p>
+        </div>
+
+        <!-- Contenedor Maquetado con CSS Grid (4 columnas a 1 columna en móvil) -->
+        <div class="grid-beneficios">
+          <article class="beneficio-card">
+            <div class="icono-box bg-primary-subtle text-primary">📘</div>
+            <h3 class="h5 fw-bold mt-3 mb-2">Educación de calidad</h3>
+            <p class="text-secondary small mb-0">Docentes especializados con amplia trayectoria laboral y laboratorios de vanguardia.</p>
+          </article>
+          <article class="beneficio-card">
+            <div class="icono-box bg-success-subtle text-success">💼</div>
+            <h3 class="h5 fw-bold mt-3 mb-2">Oportunidades reales</h3>
+            <p class="text-secondary small mb-0">Bolsa de trabajo activa con convenios directos en empresas líderes del país.</p>
+          </article>
+          <article class="beneficio-card">
+            <div class="icono-box bg-warning-subtle text-warning">⏱️</div>
+            <h3 class="h5 fw-bold mt-3 mb-2">Modalidad flexible</h3>
+            <p class="text-secondary small mb-0">Turnos diurnos, nocturnos y modalidad semipresencial adaptada a tus horarios.</p>
+          </article>
+          <article class="beneficio-card">
+            <div class="icono-box bg-info-subtle text-info">🤝</div>
+            <h3 class="h5 fw-bold mt-3 mb-2">Acompañamiento</h3>
+            <p class="text-secondary small mb-0">Tutoría académica personalizada y asesoramiento constante en empleabilidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROGRAMAS + FORMULARIO ==================== -->
+    <section id="programas" class="py-5 bg-light border-top border-bottom">
+      <div class="container py-4">
+        <div class="row g-5 align-items-start">
+          
+          <!-- Catálogo de programas académicos (col-lg-7) -->
+          <div class="col-lg-7">
+            <div class="mb-4">
+              <h2 class="fw-bold">Nuestros Programas</h2>
+              <p class="text-secondary">Carreras profesionales técnicas con alta demanda en el mercado laboral.</p>
+            </div>
+
+            <div class="row g-4">
+              <!-- Carrera 1 -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-programa">
+                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" 
+                       class="card-img-top" alt="Desarrollo de Software" style="height: 160px; object-fit: cover;">
+                  <div class="card-body p-4 d-flex flex-column">
+                    <span class="badge bg-primary-subtle text-primary w-auto align-self-start mb-2">3 años</span>
+                    <h3 class="h5 card-title fw-bold">Desarrollo de Software</h3>
+                    <p class="card-text text-secondary small flex-grow-1">
+                      Aprende desarrollo frontend, backend, bases de datos y arquitectura cloud orientada a soluciones empresariales.
+                    </p>
+                    <a href="#registro" class="btn btn-outline-primary btn-sm rounded-pill mt-3 select-programa-btn" data-carrera="software">
+                      Solicitar información
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carrera 2 -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-programa">
+                  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=80" 
+                       class="card-img-top" alt="Administración de Empresas" style="height: 160px; object-fit: cover;">
+                  <div class="card-body p-4 d-flex flex-column">
+                    <span class="badge bg-success-subtle text-success w-auto align-self-start mb-2">3 años</span>
+                    <h3 class="h5 card-title fw-bold">Administración de Empresas</h3>
+                    <p class="card-text text-secondary small flex-grow-1">
+                      Gestiona organizaciones comerciales, finanzas estratégicas, marketing digital y modelos de negocio sostenibles.
+                    </p>
+                    <a href="#registro" class="btn btn-outline-primary btn-sm rounded-pill mt-3 select-programa-btn" data-carrera="administracion">
+                      Solicitar información
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carrera 3 -->
+              <div class="col-md-12">
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden card-programa">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                      <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&q=80" 
+                           class="img-fluid h-100 w-100 object-fit-cover" alt="Redes y Telecomunicaciones" style="min-height: 160px;">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-4">
+                        <span class="badge bg-info-subtle text-info mb-2">3 años</span>
+                        <h3 class="h5 card-title fw-bold">Redes y Telecomunicaciones</h3>
+                        <p class="card-text text-secondary small mb-3">
+                          Diseño, configuración y aseguramiento de infraestructuras de red, servidores y ciberseguridad industrial.
+                        </p>
+                        <a href="#registro" class="btn btn-outline-primary btn-sm rounded-pill select-programa-btn" data-carrera="redes">
+                          Solicitar información
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- FORMULARIO DE REGISTRO (col-lg-5) -->
+          <div class="col-lg-5" id="registro">
+            <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 form-wrapper sticky-lg-top" style="top: 90px; z-index: 10;">
+              <div class="mb-4">
+                <h3 class="fw-bold mb-1">Regístrate ahora</h3>
+                <p class="text-secondary small mb-0">Completa tus datos para recibir la malla curricular y beneficios especiales.</p>
+              </div>
+
+              <form id="formularioRegistro" novalidate>
+                <!-- Nombre -->
+                <div class="mb-3">
+                  <label for="nombre" class="form-label fw-semibold small">Nombre completo <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan Pérez Ramos" required>
+                  <div class="invalid-feedback">Por favor, ingresa tu nombre completo (mínimo 3 letras).</div>
+                </div>
+
+                <!-- Correo -->
+                <div class="mb-3">
+                  <label for="correo" class="form-label fw-semibold small">Correo electrónico <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                  <div class="invalid-feedback">Ingresa una dirección de correo válida (ejemplo: usuario@dominio.com).</div>
+                </div>
+
+                <!-- Teléfono (type="tel" numérico de 9 dígitos) -->
+                <div class="mb-3">
+                  <label for="telefono" class="form-label fw-semibold small">Teléfono / Celular <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="987654321" pattern="[0-9]{9}" required>
+                  <div class="invalid-feedback">Ingresa un número telefónico válido de 9 dígitos.</div>
+                </div>
+
+                <!-- Programa de interés -->
+                <div class="mb-3">
+                  <label for="programa" class="form-label fw-semibold small">Programa de interés <span class="text-danger">*</span></label>
+                  <select class="form-select" id="programa" name="programa" required>
+                    <option value="" selected disabled>Selecciona una carrera...</option>
+                    <option value="software">Desarrollo de Software</option>
+                    <option value="administracion">Administración de Empresas</option>
+                    <option value="redes">Redes y Telecomunicaciones</option>
+                  </select>
+                  <div class="invalid-feedback">Por favor, selecciona una de las opciones.</div>
+                </div>
+
+                <!-- Checkbox Términos -->
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                  <label class="form-check-label small text-secondary" for="terminos">
+                    Acepto los <a href="#" class="text-decoration-none">términos y condiciones</a> y la política de privacidad.
+                  </label>
+                  <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" class="btn btn-success btn-lg w-100 fw-bold shadow-sm d-flex justify-content-center align-items-center gap-2">
+                  <span>Quiero inscribirme</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Mensaje de Estado en el DOM -->
+              <div id="alertaEstado" class="mt-3" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="contacto" class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <h4 class="h5 fw-bold text-white mb-3">🎓 EducaTech</h4>
+          <p class="text-secondary small">
+            Institución de formación técnica superior comprometida con la excelencia académica, innovación e inserción profesional real.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-secondary">SENATI - PIAD-222</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="h6 fw-bold text-white mb-3">Enlaces rápidos</h5>
+          <ul class="list-unstyled small text-secondary">
+            <li class="mb-2"><a href="#inicio" class="text-secondary text-decoration-none">Inicio</a></li>
+            <li class="mb-2"><a href="#beneficios" class="text-secondary text-decoration-none">Beneficios</a></li>
+            <li class="mb-2"><a href="#programas" class="text-secondary text-decoration-none">Programas</a></li>
+            <li class="mb-2"><a href="#registro" class="text-secondary text-decoration-none">Inscripción</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="h6 fw-bold text-white mb-3">Contáctanos</h5>
+          <ul class="list-unstyled small text-secondary">
+            <li class="mb-2">📍 Av. Salaverry 123, Jesús María, Lima</li>
+            <li class="mb-2">📞 (01) 625-4000</li>
+            <li class="mb-2">✉️ admision@educatech.edu.pe</li>
+            <li class="mb-2">🕒 Lun - Sáb: 8:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="h6 fw-bold text-white mb-3">Boletín Informativo</h5>
+          <p class="text-secondary small">Suscríbete para recibir novedades sobre eventos y convocatorias.</p>
+          <div class="input-group input-group-sm">
+            <input type="email" class="form-control" placeholder="Tu correo">
+            <button class="btn btn-primary" type="button">Enviar</button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center text-secondary small">
+        <p class="mb-2 mb-sm-0">© 2026 EducaTech Instituto Superior. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lógica Interactiva en JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
